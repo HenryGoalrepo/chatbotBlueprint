@@ -8,7 +8,7 @@ Route::get('/test',function(){
   dd('packgist loaded');
 });
 
-Route::get('/test',function(){
+Route::get('/test/autoload',function(){
     dd('this is for autoupdate packgist after push');
   });
 
