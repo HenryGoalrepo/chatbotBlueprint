@@ -1,5 +1,5 @@
 {
-    "name": "bot/chatbotblueprint",
+    "name": "chatbots/chatbotblueprint",
     "description": "This will give an overview of chatbot in laravel.with form and views that is required also databases",
     "type": "composer-plugin",
     "license": "MIT",
