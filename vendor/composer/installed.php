@@ -3,7 +3,7 @@
         'name' => 'chatbots/chatbotblueprint',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '61dde4a6bfa24d378c0445450ab82089a856baf2',
+        'reference' => '425f466c896161ba549f878ff1415aa854d6f215',
         'type' => 'composer-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'chatbots/chatbotblueprint' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '61dde4a6bfa24d378c0445450ab82089a856baf2',
+            'reference' => '425f466c896161ba549f878ff1415aa854d6f215',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
