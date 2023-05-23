@@ -4,5 +4,8 @@ use ChatBot\Blueprint\Http\Controllers\ChatBotController;
 
 Route::get('/chatbot',[ChatBotController::class,'bot'])->name('chatbot.bots');
 
+Route::get('/test',function(){
+  dd('packgist loaded');
+});
 
 ?>
