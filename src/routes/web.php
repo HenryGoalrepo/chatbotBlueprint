@@ -9,7 +9,7 @@ Route::get('/test',function(){
 });
 
 Route::get('/test/autoload',function(){
-    dd('this is for autoupdate packgist after push');
+    dd('this is for autodisconery packgist and tag');
   });
 
 
