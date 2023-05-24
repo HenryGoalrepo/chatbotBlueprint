@@ -13,6 +13,14 @@
         "psr-4": {
             "ChatBot\\Blueprint\\":"src/"
         }
+    },
+    "extra": {
+        "laravel":{
+             "providers":[
+               "ChatBot\\Blueprint\\ChatbotBluprintServiceProvider"
+             ]
+        }
+
     }
 
 }
