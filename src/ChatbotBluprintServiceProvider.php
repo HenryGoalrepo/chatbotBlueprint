@@ -1,17 +1,15 @@
 <?php
 namespace ChatBot\Blueprint;
+use ChatBot\Blueprint\Traits\PublishMigration;
 use Illuminate\Support\ServiceProvider;
 class ChatbotBluprintServiceProvider extends ServiceProvider{
-
+  use PublishMigration;
      public function boot():void{
 
           $this->loadRoutesFrom(__DIR__.'/routes/web.php');
           $this->loadViewsFrom(__DIR__.'/resources/views','chatbotBluePrint');
           $this->loadMigrationsFrom(__DIR__.'/database/migrations');
-          $this->publishes([
-            __DIR__.'/database/migrations/2023_05_30_065733_create_entities_table.php'=>
-            $this->app->databasePath('migrations/'.now()->format('Y_m_d_His').'_create_entities_table'),
-          ],'migrations');
+          $this->registerMigration(__DIR__.'/database/migrations');
 
      }
      public function register(){
