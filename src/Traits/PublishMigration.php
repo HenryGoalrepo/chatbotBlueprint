@@ -1,7 +1,7 @@
 <?php
 namespace ChatBot\Blueprint\Traits;
 use Generator;
-
+use Illuminate\Support\Str;
 trait PublishMigration{
 
     public function registerMigration($directory):void{
