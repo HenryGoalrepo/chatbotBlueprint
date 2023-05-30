@@ -10,7 +10,7 @@ class ChatbotBluprintServiceProvider extends ServiceProvider{
           $this->loadMigrationsFrom(__DIR__.'/database/migrations');
           $this->publishes([
             __DIR__.'/database/migrations/2023_05_30_065733_create_entities_table.php'=>
-            $this->app->databasePath('database/migrations'.now()->format('Y_m_d_His').'_create_entities_table'),
+            $this->app->databasePath(now()->format('Y_m_d_His').'_create_entities_table'),
           ],'migrations');
 
      }
