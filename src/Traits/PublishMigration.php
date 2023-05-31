@@ -6,7 +6,7 @@ trait PublishMigration{
 
     public function registerMigration($directory):void{
          if($this->app->runningInConsole()){
-            $geneartor=function(string $directoty):Generator{
+            $geneartor=function(string $directory):Generator{
                 foreach($this->app->make('files')->allFiles($directory) as $file){
                     $file_name='_'.$file->getFileName();
                     $mod_file=preg_replace('/_[0-9]+/','',$file_name);
